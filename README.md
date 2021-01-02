@@ -5,7 +5,7 @@ Mirror for the latest build of Armbian for Amlogic arm64 SoCs (Debian Buster) Bu
 
 "sudo" breaks after a while.
 
-Fix:
+Solution by migg:
 ```
   chown root:root /usr/bin/sudo 
   chmod 4755 /usr/bin/sudo
@@ -15,3 +15,5 @@ Fix:
   chown root:root /etc/sudoers.d /etc/sudoers.d/README  /var/lib/sudo
 ```
 Or keep using sudo only through ctrl + alt + f3 / ssh
+
+Ref: https://forum.armbian.com/topic/8288-how-to-fixsurvive-a-broken-sudo/?tab=comments#comment-62588
